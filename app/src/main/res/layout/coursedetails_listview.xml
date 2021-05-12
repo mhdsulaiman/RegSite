@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/OneSectionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_below="@+id/SectionsTitle">
+
+    <TextView
+        android:id="@+id/SectionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/SectionRoomNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SectionNumber"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/SectionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SectionRoomNumber"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/SectionInstructorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SectionTime"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/SectionInstructorName"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

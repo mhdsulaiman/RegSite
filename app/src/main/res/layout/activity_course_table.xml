@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TitleTxt"
+            android:layout_margin="20dp"
+            android:text="Title :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TitleInput"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout2"
+        android:layout_below="@+id/InputLinearLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HoursLabel"
+            android:layout_margin="20dp"
+            android:text="Hours :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/HoursInput"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext"
+            android:layout_margin="20dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout3"
+        android:layout_below="@+id/InputLinearLayout2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"></LinearLayout>
+</RelativeLayout>

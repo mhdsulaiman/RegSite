@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.SelectedTableActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="10dp"
+        android:id="@+id/ActivityTitleTxt"
+
+        android:text="RegSite Administration"
+        android:textAlignment="center"
+        android:background="#3895D3"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ActivityTitleTxt"
+        android:id="@+id/TableNameTxt"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddNewItemBtn"
+        android:layout_below="@+id/ActivityTitleTxt"
+        android:layout_margin="25dp"
+        android:background="@drawable/registerbtn"
+        android:layout_toEndOf="@+id/TableNameTxt"
+        android:textColor="@android:color/white"
+        android:text=" +add new item "
+        android:onClick="AddNewItem" />
+
+    <TableLayout
+        android:id="@+id/ItemTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/TableNameTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:background="#DCDCDC">
+
+            <TextView
+                android:id="@+id/FirstCol"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/SecondCol"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/ThirdCol"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/ChangeCol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Other Table >> "
+        android:id="@+id/SelectOtherTable"
+        android:layout_below="@+id/ItemTable"
+        android:layout_centerHorizontal="true"
+        android:textColor="	#1E90FF"
+        android:layout_margin="50dp"
+        android:onClick="ReturnToAdminProfile" />
+
+</RelativeLayout>

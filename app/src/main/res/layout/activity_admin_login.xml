@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Student.StudentLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RegsiteAdminstrationTxt"
+            android:text="RegSite administration"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:background="#035096"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminUsername_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RegsiteAdminstrationTxt"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/AdminUsername"
+                android:hint="Username" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AccountPassword_layout"
+            android:layout_below="@+id/AdminUsername_layout"
+            android:layout_centerInParent="true"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/AdminPassword"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Loginbtn"
+            android:text="Login"
+            android:background="#A7C7E7"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/AccountPassword_layout"
+            android:textColor="@android:color/white"
+            android:onClick="LoginData" />
+
+    </RelativeLayout>
+</RelativeLayout>

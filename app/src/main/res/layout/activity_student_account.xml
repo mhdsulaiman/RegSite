@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Student.StudentAccountActivity"
+    android:id="@+id/MainLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a95aec"
+        android:id="@+id/HeaderTitle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProfileTitle"
+            android:textColor="@android:color/white"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-smallcaps" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProfileTitle"
+            android:text="Here you can find all your courses and classes"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CourseDetails"
+        android:layout_below="@+id/HeaderTitle"
+        android:text="All Courses"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/CourseDetails">
+
+        <TableLayout
+            android:id="@+id/CoursesTable"
+            android:layout_margin="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:id="@+id/CourseIdCol"
+                    android:text=" Course ID "
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/CourseTitleCol"
+                    android:text=" Course Title "
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/TimeCol"
+                    android:text=" Time "
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/DetailCol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

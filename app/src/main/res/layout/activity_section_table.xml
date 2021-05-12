@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SectionNo"
+            android:layout_margin="20dp"
+            android:text="Section No :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SectionNoInput"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext"
+            android:layout_margin="20dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout2"
+        android:layout_below="@+id/InputLinearLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RoomNoLabel"
+            android:layout_margin="20dp"
+            android:text="Room No :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RoomNoInput"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext"
+            android:layout_margin="20dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout3"
+        android:layout_below="@+id/InputLinearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TimeLabel"
+            android:layout_margin="20dp"
+            android:text="Time :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TimeInput"
+            android:hint="Select Time..."
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext"
+            android:layout_margin="20dp"
+            android:inputType="time"
+            android:onClick="TimePicker" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout4"
+        android:layout_below="@+id/InputLinearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CourseIdLabel"
+            android:layout_margin="20dp"
+            android:text="Course ID :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/CourseIdInput"
+            android:textAlignment="center"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout5"
+        android:layout_below="@+id/InputLinearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/InstructorLabel"
+            android:layout_margin="20dp"
+            android:text="Instructor ID :"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/InstructorIdInput"
+            android:textAlignment="center"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/InputLinearLayout6"
+        android:layout_below="@+id/InputLinearLayout5"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>

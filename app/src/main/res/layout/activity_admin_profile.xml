@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.AdminProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="10dp"
+        android:id="@+id/TitleTxt"
+
+        android:text="RegSite Administration"
+        android:textAlignment="center"
+        android:background="#3895D3"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/subTitleTxt"
+        android:layout_below="@+id/TitleTxt"
+        android:text="Pick a table that you want to View, Change or Add new items to it"
+        android:textAlignment="center"
+        android:textColor="#F4BC1C"
+        android:textSize="23dp"
+        android:fontFamily="serif" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/TableList"
+        android:layout_below="@+id/subTitleTxt"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>
