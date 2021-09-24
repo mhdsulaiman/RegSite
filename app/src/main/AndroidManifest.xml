@@ -15,9 +15,8 @@
         <activity android:name=".Activities.Admin.TablesActivities.StudentTableActivity" />
         <activity android:name=".Activities.Admin.SelectedTableActivity" />
         <activity android:name=".Activities.Admin.AdminProfileActivity" />
-        <activity android:name=".Activities.Admin.AdminLoginActivity" />
         <activity
-            android:name=".ui.login.AdminLoginActivity"
+            android:name=".Activities.Admin.AdminLoginActivity"
             android:label="@string/title_activity_admin_login" />
         <activity android:name=".Activities.Student.CourseDetailsActivity" />
         <activity android:name=".Activities.Student.StudentAccountActivity" />
